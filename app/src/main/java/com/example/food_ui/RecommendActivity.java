@@ -1,6 +1,9 @@
 package com.example.food_ui;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,5 +54,14 @@ public class RecommendActivity extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(RecommendActivity.this, "Có lỗi xảy ra khi xử lý dữ liệu", Toast.LENGTH_SHORT).show();
         }
+        Button back = findViewById(R.id.btnBackToMain);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent main = new Intent(RecommendActivity.this, MainActivity.class);
+                startActivity(main);
+                finish();
+            }
+        });
     }
 }

@@ -101,7 +101,7 @@ public class ChoseFoodActivity extends AppCompatActivity {
         protected String doInBackground(Void... voids) {
             StringBuilder result = new StringBuilder();
             try {
-                URL url = new URL("https://055b-118-70-31-97.ngrok-free.app/food/recommend-food");
+                URL url = new URL("https://6afc-2405-4802-9017-8c30-98ab-febd-1549-a2f7.ngrok-free.app/food/recommend-food");
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("POST");
                 urlConnection.setRequestProperty("Content-Type", "application/json");

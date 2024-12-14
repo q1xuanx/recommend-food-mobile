@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 if (searchText.isEmpty() || searchText.isBlank()) {
                     Toast.makeText(getApplicationContext(), "Vui lòng nhập từ khóa để tiến hành gợi ý", Toast.LENGTH_SHORT).show();
                 } else {
-                    String url = " https://055b-118-70-31-97.ngrok-free.app/food/search-food?search=" + searchText;
+                    String url = "https://6afc-2405-4802-9017-8c30-98ab-febd-1549-a2f7.ngrok-free.app/food/search-food?search=" + searchText;
                     new GetFoodTask().execute(url);
                 }
             }

@@ -7,107 +7,48 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:animationCache="true"
-    android:background="#F8F4F4"
+    android:background="#FDFDFD"
     tools:context=".MainActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView2"
-        android:layout_width="393dp"
-        android:layout_height="179dp"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:shapeAppearanceOverlay="@style/roundimageview"
-        app:srcCompat="@drawable/food" />
+        app:layout_constraintVertical_bias="0.449"
+        app:srcCompat="@drawable/frame_5_1" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="268dp"
-        android:layout_height="47dp"
+        android:layout_width="215dp"
+        android:layout_height="39dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="110dp"
-        android:text="Food Recommend"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/actor"
+        android:text="Xin Chào !"
         android:textAlignment="center"
-        android:textColor="#2196F3"
-        android:textSize="30sp"
+        android:textColor="#F95C5C"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="348dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="252dp"
-        android:background="@drawable/border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView3"
-            android:layout_width="168dp"
-            android:layout_height="157dp"
-            android:background="@drawable/image_border"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.027"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.6"
-            app:shapeAppearanceOverlay="@style/roundimageview"
-            app:srcCompat="@drawable/food01" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="207dp"
-            android:layout_height="52dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Hôm nay bạn đã ăn gì chưa ?"
-            android:textAlignment="textEnd"
-            android:textColor="#E91E63"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.886"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.145" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="Cho chúng mình biết nhé"
-            android:textColor="#E91E63"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="0.053" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="340dp"
-        android:layout_height="120dp"
+        android:layout_width="361dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.071">
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/searchFood"
@@ -115,22 +56,24 @@
             android:layout_height="51dp"
             android:background="@drawable/border"
             android:elegantTextHeight="true"
+            android:elevation="6dp"
             android:ems="10"
             android:hint="Nhập món mà bạn đã dùng trước đó"
             android:inputType="text"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.043" />
+            app:layout_constraintVertical_bias="0.164" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="131dp"
-            android:layout_height="48dp"
-            android:text="Gửi"
+            android:layout_width="149dp"
+            android:layout_height="47dp"
+            android:backgroundTint="#F95C5C"
+            android:text="Gợi Ý"
             app:icon="@android:drawable/ic_menu_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -141,56 +84,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="342dp"
-        android:layout_height="188dp"
-        android:background="@drawable/border"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/actor"
+        android:text="Hơn 500 món ăn đang chờ bạn đó"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:shapeAppearanceOverlay="@style/roundimageview"
-            app:srcCompat="@drawable/images" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/kham_pha"
-            android:textAlignment="center"
-            android:textColor="#FFC107"
-            android:textSize="20sp"
-            android:typeface="sans"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.246" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginBottom="68dp"
-            android:text="@string/trai_nghiem"
-            android:textColor="#FFEB3B"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-            app:layout_constraintStart_toStartOf="@+id/imageView4" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
